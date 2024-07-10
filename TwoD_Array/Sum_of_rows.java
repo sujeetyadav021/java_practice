@@ -13,6 +13,11 @@ public class Sum_of_rows {
                 arr[i][j] = sc.nextInt();
             }
         }
+        System.out.println(arr.length);
+        System.out.println(arr[0][0]);
+        System.out.println(arr[1][0]);
+        System.out.println(arr[2][1]);
+
 
         for (int i = 0; i < r; i++) {
             int sum_rows = 0;
