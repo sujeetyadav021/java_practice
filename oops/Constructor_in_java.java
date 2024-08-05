@@ -1,4 +1,4 @@
-package opps;
+package oops;
 
 
 
@@ -24,7 +24,7 @@ package opps;
 
 public class Constructor_in_java {
     public static void main(String[] args) {
-        Person p1 = new Person("Sujeet",24,75,98454);
+        Person p1 = new Person("Sujeet",24,75,4654);
         System.out.println(p1.name);
     }
 }

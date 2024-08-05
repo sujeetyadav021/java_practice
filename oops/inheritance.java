@@ -16,7 +16,7 @@ class Vehicle{
 }
 
 class Car{
-    int sunRoof;
+    int sunRoof; 
     int noOfDoors;
     int economy;
 
