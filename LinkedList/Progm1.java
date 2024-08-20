@@ -83,6 +83,29 @@ class SingleLinkedList{
         }
         return curr.data;
     }
+
+    void updateAtPos(int pos,int value){
+        Node curr = head;
+        int currPos = 1;
+        while(currPos<pos){
+            curr = curr.next;
+            currPos++;
+        }
+        curr.data=value; 
+
+    }
+
+    void updateBYValue(int oldValue, int newValue){
+        Node curr =head;
+        while(curr != null){
+            if(curr.data == oldValue){
+                curr.data=newValue;
+                break;
+            }
+            curr=curr.next;
+        }
+
+    }
 }
 public class Progm1 {
     public static void main(String[] args) {
@@ -99,8 +122,12 @@ public class Progm1 {
         l1.printList();
         l1.addAtPos(3, 90);
         l1.printList();
-        System.out.println(l1.getLengthLL());
-        System.out.println(l1.valueOFMiddleNode());
+        // System.out.println(l1.getLengthLL());
+        // System.out.println(l1.valueOFMiddleNode());
+        l1.updateAtPos(1, 900);
+        l1.printList();
+        l1.updateBYValue(900,500);
+        l1.printList();
 
     }
 }
